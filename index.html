@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prasant Poudel</title>
+    <link rel="icon" type="image/gif" href="./assets/Infinity-1s-200px.gif" id="favicon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+  </head>
+  <body>
+    <div class="loading-container">
+        <img src="https://uploads-ssl.webflow.com/5b0eb11723332d2455b73469/5bb04c63bf023419d53a2246_scribble-forever2.gif" alt="Loading...">
+        <div class="loading-text">
+            <h1>Prasant Poudel</h1>
+        </div>
+    </div>
+    
+    <nav id="desktop-nav">
+      <div  class="logo" onclick="refreshPage()">©Prasant Poudel</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#technical_skill">Technical Skill</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <nav id="hamburger-nav">
+      <div class="logo" onclick="refreshPage()">©Prasant Poudel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#technical_skill" onclick="toggleMenu()">Technical Skill</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="toggle-container">
+      <input type="checkbox" id="themeToggle" class="theme-toggle" onchange="toggleTheme()">
+      <label for="themeToggle" class="toggle-label"></label>
+    </div>
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="pic" src="./assets/Profile_photo.png" alt="Prasant Poudel profile picture" />
+      </div>
+
+      <div class="section__text">
+        <p1 class="section__text__p1">Hello, I'm</p1>
+        <h1 class="title">Prasant Poudel</h1>
+        <p1 class="section__text__p2">Machine Learning Engineer</p1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/PrasantPoudelCV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon-linkedin"
+            onclick="location.href='https://www.linkedin.com/in/prasant-poudel-08a510210/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon-github"
+            onclick="location.href='https://github.com/prasantpoudel'"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/re.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p1>1 years <br />Machine Learning Engineer</p1>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p1>Computer Science Engineering Degree</p1>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I am Prasant Poudel, a dedicated Machine Learning Engineer with a Bachelor's degree in Computer Science Engineering. 
+                I excel in developing cutting-edge solutions, such as spearheading the creation of a versatile healthcare API and fine-tuning the Whisper largeV3 Model. 
+                In my roles, I've driven profitability through strategic data science applications and showcased proficiency in MLOps CI/CD pipelines and impactful data visualization. 
+                My diverse technical stack, including DS/ML/AI,ChatBot development,and cloud deployment tools, positions me as a forward-thinking professional ready to make impactful contributions in the realm of artificial intelligence and data science.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Experience -->
+<section id="experience">
+  <h3 class="section__text__p1">Professional Experience</h3>
+  <h1 class="title">Experience</h1>
+
+  <!-- Internship 1 -->
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h3 class="experience-sub-title">Machine Learning Engineer</h3>
+        <p1 class="experience-duration">Sep 2023 - Nov 2023</p1>
+        <p3 class="experience-company">Wiseyak Inc</p3>
+        <p2 class="experience-description"><hr>
+          <li>Spearheaded the rapid development of a versatile API supporting audio-to-text conversion in 10+ languages, with a focus on healthcare applications.</li>
+          <li>Led the fine-tuning of the Whisper largeV3 Model using medical audio data, enhancing its accuracy and applicability within the health domain.</li>
+          <li>Implemented advanced audio diarization capabilities in the API, enabling precise handling of multiple speakers for detailed medical conversation analysis.</li>
+          <li>Created a sophisticated medical chatbot integrated with the enhanced Whisper largeV3 Model, offering a knowledgeable interface for healthcare-related
+          inquiries.</li>
+          <li>Optimized development and deployment efficiency by establishing a CUDA-supported CI/CD pipeline, ensuring accelerated model training and
+          deployment phases with GPU acceleration.</li>
+        </p2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Internship 2 -->
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h3 class="experience-sub-title">Data Science Intern</h3>
+        <p1 class="experience-duration">Jun 2023 - Aug 2023</p1>
+        <p3 class="experience-company">Parodigy InfoTech</p3>
+        <p2 class="experience-description"><hr>
+        <li>Develop action plans to mitigate risks in decision-making while increasing profitability by leveraging data science.</li>
+        <li>Drive the interaction and partnership between the managers to ensure active cooperation in identifying as well as defining analytical needs,
+          and generating the pull-through of insights with the business.</li>
+        <li>Build predictive models using various machine learning tools to predict the possibility of model failure.</li>
+        <li>Develop algorithms using Natural Language Processing and Deep Learning models for predictive maintenance.</li>
+        </p2>
+      </div>
+    </div>
+  </div>
+
+    <!-- Internship 3 -->
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h3 class="experience-sub-title">Machine Learning Intern</h3>
+        <p1 class="experience-duration">Aug 2022 - Oct 2022</p1>
+        <p3 class="experience-company">Varcons PVT Ltd</p3>
+        <p2 class="experience-description"><hr>
+        <li>Demonstrated proficiency in integrating Heroku workflows, expertly utilizing APIs for data warehousing and extraction, and developing a sentiment analysis model based on API-derived data.</li>
+        <li>Successfully implemented end-to-end MLOps CI/CD pipelines, showcasing expertise in continuous integration and deployment processes.</li>
+        <li>Proficiently leveraged Tableau and PowerBI for impactful data visualization, while also possessing strong skills in frontend development using
+          Streamlit and Flask.</li>
+        </p2>
+      </div>
+    </div>
+    <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#technical_skill'"
+      />
+  </div>
+  
+    </section>
+
+    
+    <!-- Technical Skill -->
+    <section id="technical_skill">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technical Skill</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+
+            <!-- Machine Learning Experience -->
+            <h3 class="skill-sub-title">Machine Learning Engineer</h3>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p1>Experienced</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NLP</h3>
+                  <p1>Experienced</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Transformers</h3>
+                  <p1>Intermediate</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Langchain</h3>
+                  <p1>Basic</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sklearn</h3>
+                  <p1>Advance</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Computer Vision</h3>
+                  <p1>Intermediate</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pytroch</h3>
+                  <p1>Intermediate</p1>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Frontend development -->
+          <div class="details-container">
+            <h3 class="skill-sub-title">Frontend Development</h3>
+            <div class="article-container">
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Flask</h3>
+                      <p1>Advance</p1>
+                    </div>
+                  </article>
+                
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Streamlit</h3>
+                      <p1>Advance</p1>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Gradio</h3>
+                      <p1>Intermediate</p1>
+                    </div>
+                  </article>
+            </div>
+         </div>
+
+        <!-- Devops -->
+        <div class="details-container">
+            <h3 class="skill-sub-title">Devops</h3>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p1>Advance</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github/GitLabs</h3>
+                  <p1>Advance</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FastAPI</h3>
+                  <p1>Intermediate</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p1>Intermediate</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MLFLow/Zenml</h3>
+                  <p1>Intermediate</p1>
+                </div>
+              </article>
+            </div>
+            </div>
+
+
+        <!-- Backend development -->
+          <div class="details-container">
+            <h3 class="skill-sub-title">Backend Development</h3>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p1>Intermediate</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p1>Intermediate</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pinecone</h3>
+                  <p1>Advance</p1>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ChromaDB</h3>
+                  <p1>Advance</p1>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+  </div>
+  <!-- 
+  <div>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Project One</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Project Two</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Project Three</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  -->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="email-icon"
+          />
+          <p><a href="prasantpoudel33@gmail.com">prasantpoudel33@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="linkedin-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/prasant-poudel-08a510210/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-down">  
+      <p>Copyright &#169; 2023 Prasant.Poudel(プラサント・プーデル) . All Rights Reserved.</p>
+      <script>
+        function showNepalTime() {
+            // Get the current time in Nepal's time zone ("Asia/Kathmandu")
+            var nepalTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kathmandu' });
+            // Display the current time in Nepal
+            document.write(`<p>Current Time in Nepal: ${nepalTime}</p>`);
+        }
+        // Call the function to display the current time in Nepal
+        showNepalTime();
+    </script>
+      
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
